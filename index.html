@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="images/pdf.png" alt="Brand Image" width="40" height="35" class="rounded">
+                <img src="images/books.png" alt="Brand Image" width="40" height="35" class="rounded">
                 E-BOOK
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,10 +52,6 @@
                             </ul>
                         </li> -->
                 </ul>
-                <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
                 <div class="login-register">
                     <button class="btn btn-outline-secondary mx-1" type="btn" data-bs-toggle="modal"
                         data-bs-target="#loginModal">Login</button>
@@ -156,7 +152,8 @@
                             </div>
                         </div>
                         <div class="mb-2">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label" placeholder="johndoe@gmail.com">Email
+                                address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1">
                         </div>
                         <div class="mb-3">
@@ -180,18 +177,30 @@
             </div>
         </div>
     </div>
-
     <!-- End Navbar -->
     <div class="container-fluid bg-light header-future">
         <div class="d-flex flex-column justify-content-center align-items-center">
             <div class="column">
-                <h1 class="text-dark pt-5"><strong>Welcome</strong></h1>
+                <!-- <h1 class="text-dark pt-5"><strong>Welcome to E-Book</strong></h1> -->
+                <div class="box">
+                    <div class="inner">
+                        <span>E-Book</span>
+                    </div>
+                    <div class="inner">
+                        <span>Free PDF Books</span>
+                    </div>
+                </div>
             </div>
-            <div class="column text-center w-75">
+            <div class="column text-center">
                 <p class="text-muted">
-                    Livres PDF gratuit.
+                    Free PDF Books. <img src="images/open-book.png" alt="" width="80" height="80"
+                        style="margin-top: -40px;">
                 </p>
             </div>
+            <form class="d-flex my-2">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
         </div>
     </div>
 
