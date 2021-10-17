@@ -4,18 +4,20 @@
     src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
-  }
-  /* =======================================================
+}
+
+/* =======================================================
   *
   * 	Template Style 
   *	Edit this section
   *
   * ======================================================= */
-  html, body {
+html,
+body {
     overflow-x: hidden;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Varela Round", Arial, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -24,21 +26,27 @@
     background: #fff;
     height: 100%;
     position: relative;
-  }
-ul, ol {
+}
+
+ul,
+ol {
     list-style-type: none;
 }
+
 li a {
     color: rgba(0, 0, 0, 0.5)
 }
+
 li a:hover {
     color: rgba(0, 0, 0, 0.7)
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 16px;
     transition: all .3s ease;
 }
+
 a:hover {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
@@ -46,6 +54,7 @@ a:hover {
     font-weight: bold;
     transition: all .2s ease-in;
 }
+
 /* Feature Books */
 .ebook-feature-container {
     height: 600px;
@@ -106,7 +115,8 @@ a:hover {
         text-align: center;
         margin-bottom: 10em;
     }
-    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner {
         text-align: start;
         padding-right: 4em;
     }
@@ -127,17 +137,20 @@ a:hover {
     .ebook-feature-container .ebook-feature-figure img {
         max-width: 90%;
     }
-    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner {
         text-align: center;
         padding: 4em;
     }
 }
+
 @media screen and (max-width: 576px) {
     .ebook-feature-container .ebook-feature-figure {
         text-align: center;
         margin-bottom: 4em;
     }
-    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner {
         text-align: center;
         padding: 2em;
     }
@@ -152,14 +165,16 @@ a:hover {
         text-align: center;
     }
 }
+
 /* End Feature */
 
 /* Top Categories */
-.top-categories{
+.top-categories {
     margin: 10px auto 20px auto;
     padding: 5% 5%
 }
-.top-categories .row{
+
+.top-categories .row {
     justify-content: center;
 }
 
@@ -170,45 +185,89 @@ a:hover {
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
-.top-categories .uk-card-body{
-    width: 180px; 
+.top-categories .uk-card-body {
+    width: 180px;
     height: 350px;
-    padding: 3px 3px 3px 3px !important; 
-    margin: 0px 10px 20px 10px; 
+    padding: 3px 3px 3px 3px !important;
+    margin: 0px 10px 20px 10px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.top-categories .uk-card-body img{
+
+.top-categories .uk-card-body img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     position: relative;
 }
-@media screen and (max-width: 992px){
-    .top-categories{
+
+@media screen and (max-width: 992px) {
+    .top-categories {
         padding: 0px 0px;
     }
-    .top-categories .uk-card-body{
+
+    .top-categories .uk-card-body {
         width: 170px;
         height: 340px;
     }
 
 }
-@media screen and (max-width: 768px){
-    .top-categories{
+
+@media screen and (max-width: 768px) {
+    .top-categories {
         padding: 0px 0px;
     }
-    .top-categories .uk-card-body{
+
+    .top-categories .uk-card-body {
         width: 150px;
         height: 320px;
     }
 }
-@media screen and (max-width: 576px){
-    .top-categories .uk-card-body{
+
+@media screen and (max-width: 576px) {
+    .top-categories .uk-card-body {
         width: 150px;
         height: 300px;
         margin: 0px 5px 10px 5px;
     }
-    
+
 }
+
 /* End Top Categories */
+
+@media screen and (max-width: 576px) {
+    .book-detail-fgr {
+        margin-bottom: .5em;
+    }
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    color: 0, 0, 0, rgba(0, 0, 0, 0.5);
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 20px;
+    /* Increase font size */
+}
+
+#myBtn:hover {
+    back
+}
