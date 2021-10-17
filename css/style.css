@@ -226,11 +226,10 @@ a:hover {
 
 @media screen and (max-width: 576px) {
     .top-categories .uk-card-body {
-        width: 150px;
+        width: 140px;
         height: 300px;
         margin: 0px 5px 10px 5px;
     }
-
 }
 
 /* End Top Categories */
@@ -269,5 +268,12 @@ a:hover {
 }
 
 #myBtn:hover {
-    back
+    background-color: #555;
+}
+@media screen and (max-width: 576px) {
+    #myBtn{
+        bottom: 50px;
+        right: 20px;
+        padding: 8px;
+    }
 }
