@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* =======================================================
+  *
+  * 	Template Style 
+  *	Edit this section
+  *
+  * ======================================================= */
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: "Varela Round", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #7f7f7f;
+    background: #fff;
+    height: 100%;
+    position: relative;
+  }
+ul, ol {
+    list-style-type: none;
+}
+li a {
+    color: rgba(0, 0, 0, 0.5)
+}
+li a:hover {
+    color: rgba(0, 0, 0, 0.7)
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s ease-in;
+}
+/* Feature Books */
+.ebook-feature-container {
+    height: 600px;
+    margin-bottom: 10em;
+    padding-top: 4em;
+}
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container {
+        height: inherit !important;
+    }
+}
+
+.ebook-feature-container .ebook-feature-copy {
+    height: 600px;
+    display: table;
+}
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container .ebook-feature-copy {
+        display: block;
+        height: inherit !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+.ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 8em;
+}
+
+.ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner h2 {
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 0 20px 0;
+}
+
+/* .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner h2:before {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: gray !important;
+    content: "";
+} */
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner h2:before {
+        left: 50%;
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container .ebook-feature-figure {
+        text-align: center;
+        margin-bottom: 10em;
+    }
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+        text-align: start;
+        padding-right: 4em;
+    }
+}
+
+.ebook-feature-container .ebook-feature-figure img {
+    vertical-align: based;
+    max-width: 380px;
+}
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container .ebook-feature-figure img {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ebook-feature-container .ebook-feature-figure img {
+        max-width: 90%;
+    }
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+        text-align: center;
+        padding: 4em;
+    }
+}
+@media screen and (max-width: 576px) {
+    .ebook-feature-container .ebook-feature-figure {
+        text-align: center;
+        margin-bottom: 4em;
+    }
+    .ebook-feature-container .ebook-feature-copy>.ebook-feature-copy-inner{
+        text-align: center;
+        padding: 2em;
+    }
+}
+
+.ebook-feature-container .ebook-feature-figure {
+    text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+    .ebook-feature-container .ebook-feature-figure {
+        text-align: center;
+    }
+}
+/* End Feature */
+
+/* Top Categories */
+.top-categories{
+    margin: 10px auto 20px auto;
+    padding: 5% 5%
+}
+.top-categories .row{
+    justify-content: center;
+}
+
+.top-categories .row h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 70px;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.top-categories .uk-card-body{
+    width: 180px; 
+    height: 350px;
+    padding: 3px 3px 3px 3px !important; 
+    margin: 0px 10px 20px 10px; 
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.top-categories .uk-card-body img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+}
+@media screen and (max-width: 992px){
+    .top-categories{
+        padding: 0px 0px;
+    }
+    .top-categories .uk-card-body{
+        width: 170px;
+        height: 340px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .top-categories{
+        padding: 0px 0px;
+    }
+    .top-categories .uk-card-body{
+        width: 150px;
+        height: 320px;
+    }
+}
+@media screen and (max-width: 576px){
+    .top-categories .uk-card-body{
+        width: 150px;
+        height: 300px;
+        margin: 0px 5px 10px 5px;
+    }
+    
+}
+/* End Top Categories */
