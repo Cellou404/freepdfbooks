@@ -325,3 +325,22 @@ a:hover {
 		left: -100%;
 	}
 }
+/* Bog */
+
+#blog-aside .most-recent-post, .old-post, a h4:hover{
+    color: rgb(28, 28, 87);
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.post-detail {
+    border-right: 2px solid #CCCCCC;
+}
+@media screen and (max-width: 576px) {
+    .post-detail{
+        border-right: none;
+    }
+}
+.post-detail hr{
+    height: 2px;
+}

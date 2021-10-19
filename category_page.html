@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: #f1f1f1;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="images/books.png" alt="Brand Image" width="40" height="35" class="rounded">
@@ -31,14 +31,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <!-- <span uk-icon="home"></span> -->
+                            <img src="https://img.icons8.com/ios/25/000000/home--v3.png"/>
+                            Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">
+                            <!-- <span uk-icon="info"></span> -->
+                            <img src="https://img.icons8.com/ios/25/000000/info--v3.png"/>
+                            About
+                        </a>
                     </li>
                     <li class="nav-item" data-bs-toggle="modal" data-bs-target="#category-modal"
                         uk-tooltip="Cliquez pour afficher la liste des categories">
-                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="#">
+                            <img src="https://img.icons8.com/dotty/25/000000/categorize.png"/>
+                            Categories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/
+                            25/000000/external-blog-digital-marketing-flatart-icons-outline-flatarticons-1.png"/>
+                            Blog
+                        </a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -58,13 +76,20 @@
                         </form> -->
                 <div class="login-register">
                     <button class="btn btn-outline-secondary mx-1" type="btn" data-bs-toggle="modal"
-                        data-bs-target="#loginModal">Login</button>
+                        data-bs-target="#loginModal">
+                        <img src="https://img.icons8.com/ios-filled/25/000000/login-rounded-right.png"/>
+                        Login
+                    </button>
                     <button class="btn btn-outline-secondary" type="btn" data-bs-toggle="modal"
-                        data-bs-target="#registerModal">Register</button>
+                        data-bs-target="#registerModal">
+                        <img src="https://img.icons8.com/ios-filled/25/000000/add-user-male.png"/>
+                        Register
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- # Navbar -->
     <!-- Modal Category List-->
     <div class="modal fade" id="category-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="category-modal-label" aria-hidden="true">
@@ -96,26 +121,32 @@
             </div>
         </div>
     </div>
-
+    <!-- # Modal Category List -->
     <!--Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static"
         data-bs-keyboard="false" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <h5 class="modal-title text-uppercase uk-text-bolder" id="exampleModalLabel">Login</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-2">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">
+                                <span uk-icon="mail"></span>
+                                Email address
+                            </label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-2">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <label for="exampleInputPassword1" class="form-label">
+                                <span uk-icon="lock"></span>
+                                Password
+                            </label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
                         <!-- <div class="mb-3 form-check">
@@ -124,48 +155,23 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button> -->
 
-                        <button class="btn btn-outline-secondary" type="submit">Submit</button>
+                        <button class="btn btn-outline-secondary" type="submit">
+                            Submit
+                            <span uk-icon="forward"></span>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid bg-light header-future">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <div class="column">
-                <!-- <h1 class="text-dark pt-5">
-                    <strong>Welcome to E-Book</strong>
-                </h1> -->
-                <div class="box">
-                    <div class="inner">
-                        <span>E-Book</span>
-                    </div>
-                    <div class="inner">
-                        <span>Free PDF Books</span>
-                    </div>
-                </div>
-            </div>
-            <div class="column text-center w-75">
-                <p class="text-muted">
-                    Free PDF Books.
-                    <img src="images/open-book.png" alt="" width="80" height="80" style="margin-top: -40px;">
-                </p>
-            </div>
-            <form class="d-flex my-2">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-
+    <!-- # login Modal -->
     <!--Register Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel" style="text-transform: uppercase;">Register for free
+                    <h5 class="modal-title uk-text-bolder" id="exampleModalLabel" style="text-transform: uppercase;">Register for free
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -173,22 +179,34 @@
                     <form>
                         <div class="row mb-2">
                             <div class="col">
-                                <label for="inputFirstName" class="form-label">First Name</label>
+                                <label for="inputFirstName" class="form-label">
+                                    <span uk-icon="user"></span>
+                                    First Name
+                                </label>
                                 <input type="text" class="form-control" id="inputFirstName"" placeholder=" First name"
                                     aria-label="First name">
                             </div>
                             <div class="col">
-                                <label for="inputLastName" class="form-label">Last Name</label>
+                                <label for="inputLastName" class="form-label">
+                                    <span uk-icon="user"></span>
+                                    Last Name
+                                </label>
                                 <input type="text" class="form-control" id="inputLastName" placeholder="Last name"
                                     aria-label="Last name">
                             </div>
                         </div>
                         <div class="mb-2">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">
+                                <span uk-icon="mail"></span>
+                                Email address
+                            </label>
                             <input type="email" class="form-control" id="exampleInputEmail1">
                         </div>
                         <div class="mb-3">
-                            <label for="inputPassword5" class="form-label">Password</label>
+                            <label for="inputPassword5" class="form-label">
+                                <span uk-icon="lock"></span>
+                                Password
+                            </label>
                             <input type="password" id="inputPassword5" class="form-control"
                                 aria-describedby="passwordHelpBlock">
                             <div id="passwordHelpBlock" class="form-text">
@@ -198,25 +216,32 @@
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="inputPassword5" class="form-label">Confirm Password</label>
+                            <label for="inputPassword5" class="form-label">
+                                <span uk-icon="lock"></span>
+                                Confirm Password
+                            </label>
                             <input type="password" id="inputPassword5" class="form-control"
                                 aria-describedby="passwordHelpBlock">
                         </div>
-                        <button class="btn btn-outline-secondary" type="submit">Submit</button>
+                        <button class="btn btn-outline-secondary" type="submit">
+                            Submit
+                            <span uk-icon="forward"></span>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <!-- # Register Modad -->
 
 
     <!-- Simmilar Books -->
     <div class="container top-categories w-75">
-        <div class='row' uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <div class='row' uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
             <h2 class="text-center">Category: <span class="text-muted ">Self Help</span></h2>
         </div>
         <div class='row' uk-grid
-            uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true">
+            uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: false">
             <div class='col-6 col-sm-4 col-md-4 col-lg-3'>
                 <a href="book_detail.html">
                     <div>
@@ -314,6 +339,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- UIkit JS -->
     <script src="uikit/js/uikit.min.js"></script>
+    <script src="uikit/js/uikit-icons.min.js"></script>
     <!-- Script JS -->
     <script src="js/script.js"></script>
 </body>
